@@ -21,14 +21,14 @@ def draw_rect(x, y, width, height):
 
 
 def draw_board():
-    app.fill(255, 255, 0)
+    app.fill(169, 136, 179)
     for row in range(0, 3):
         for col in range(0, 3):
             draw_rect(board_model[row][col]["x"], board_model[row][col]["y"], RECT_WIDTH, RECT_HEIGHT)
 
 
 def draw_circle(row, col):
-    app.fill(255, 0, 0)
+    app.fill(152, 140, 156)
     x = board_model[row][col]["x"] * SCALE + (RECT_WIDTH/2) * SCALE
     y = board_model[row][col]["y"] * SCALE + (RECT_HEIGHT/2) * SCALE
     app.ellipse(x, y, 50, 50)  # draw a circle: center_x, center_y, size_x, size_y
