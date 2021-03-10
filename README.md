@@ -1,1 +1,1 @@
-# tic-tac-toe
+# Tic tac toe board in python
