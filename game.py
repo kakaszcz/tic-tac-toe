@@ -18,18 +18,10 @@ def draw_board():
         [{"x": 30, "y": 110}, {"x": 90, "y": 110}, {"x": 150, "y": 110}],
         [{"x": 30, "y": 190}, {"x": 90, "y": 190}, {"x": 150, "y": 190}]
     ]
+    for row in range(0, 3):
+        for col in range(0, 3):
+            draw_rect(board_model[row][col]["x"], board_model[row][col]["y"], 60, 80)
 
-    draw_rect(board_model[0][0]["x"], board_model[0][0]["y"], 60, 80)
-    draw_rect(board_model[0][1]["x"], board_model[0][1]["y"], 60, 80)
-    draw_rect(board_model[0][2]["x"], board_model[0][2]["y"], 60, 80)
-
-    draw_rect(board_model[1][0]["x"], board_model[1][0]["y"], 60, 80)
-    draw_rect(board_model[1][1]["x"], board_model[1][1]["y"], 60, 80)
-    draw_rect(board_model[1][2]["x"], board_model[1][2]["y"], 60, 80)
-
-    draw_rect(board_model[2][0]["x"], board_model[2][0]["y"], 60, 80)
-    draw_rect(board_model[2][1]["x"], board_model[2][1]["y"], 60, 80)
-    draw_rect(board_model[2][2]["x"], board_model[2][2]["y"], 60, 80)
 
 app = App(1024, 768)
 app.background(255, 255, 255)
