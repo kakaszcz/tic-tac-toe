@@ -11,5 +11,9 @@ pip install processing-py --upgrade
 
 ## Exercise
 
-1. create a procedure to draw game board
-2. create a procedure which draws a circle
+1. Create a procedure to draw game board
+2. Create a procedure which draws a circle
+
+## Screenshot
+
+![Screenshot](screenshot-01.png "Board")
